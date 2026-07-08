@@ -65,7 +65,7 @@ else
 	if [[ -n "$target_id" ]]; then
 		kdotool windowactivate "$target_id"
 	else
-		setsid -f "${APP_TOGGLE_LAUNCH_CMD[@]}" >/dev/null 2>&1
+		env -u SHLVL setsid -f "${APP_TOGGLE_LAUNCH_CMD[@]}" >/dev/null 2>&1
 	fi
 fi
 
