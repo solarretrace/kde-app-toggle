@@ -1,0 +1,11 @@
+
+# Editors
+*.sublime-workspace
+*.sublime-project
+.kateproject
+*~
+*.swp
+
+# OS-specific files
+.DS_Store
+thumbs.db
